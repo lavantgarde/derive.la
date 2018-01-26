@@ -1,0 +1,148 @@
+* {
+	text-align: center;
+	cursor: default;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;}
+	
+@font-face {
+	font-family: Akzindenz;
+	src: url(/font/AkzidenzGrotesk-Regular.otf);
+}
+
+p {
+	font-family: Akzidenz, sans-serif;	
+
+}
+
+.fadeIn{
+	animation: 3s slidein;
+}
+
+@keyframes slidein {
+  from { 
+  	transform: scaleX(0);
+    transform: scaleY(0);
+	transform: scaleZ(0);
+	opacity: 0;
+   }
+  to {
+  	transform: scaleX(1);
+    transform: scaleY(1);
+	transform: scaleZ(1);
+ 	opacity: 1;
+ }
+}
+
+a, a:active{
+	text-align: center;
+	color:#262626;
+	/*text-decoration:underline;*/
+	}
+	a:hover, a.selected{
+	color:#FF0000;	
+	}
+
+img{
+	display: inline-flex;
+	transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+}
+
+.logo{
+	position:relative;
+	max-width:100%;
+
+	}
+.logo text{
+	font-family: 'Akzidenz';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 5em;
+	text-decoration: none;
+	text-decoration-line: none;
+}
+.logo a{
+	display:block;
+	width:340px;
+	margin:0 auto;
+	margin-bottom:3px;
+	text-decoration: none;
+	}
+
+.logoBreak {
+	max-width: 50%;
+}
+
+div.container {	
+	height: 960px;
+}
+
+div.grid {
+	display: inline-flex;
+	height: auto;
+	max-height: 960px;
+	padding: 25px 0;
+
+	-webkit-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;	
+	}
+
+div.grid-cell {
+	height: auto;
+	padding: 2px 2px;
+}
+
+img {
+	text-align:center;
+	-webkit-align-items: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	max-height: 960px;
+	padding: 0 0 5px 0;
+	opacity:0;
+}
+img:not(.initial) {
+	transition: opacity 2s;
+}
+
+img.initial,
+img.loaded,
+img.error 
+{
+	opacity: 1;
+}
+
+
+
+.img_ img:hover {
+	
+	background: #FF0000;	
+    transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+}
+
+.btn {
+  color: #000000;
+  background: #ffffff;
+  font-size: 20px;
+  padding: 20px 34px 20px 34px;
+  border: solid #000000 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f7f7f7;
+  text-decoration: none;
+}
