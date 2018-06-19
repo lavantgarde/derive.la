@@ -5,4 +5,4 @@ created some time ago in undergrad, using html, css, javascript, json, lazyloadi
 
 influenced by jjjjound, reform.lt, and some other mood boards. has changed from a single long collection of images to multiple smaller collections of sub-moods.
 
-when i have time, i'll add archive.derive.la
+when i have time, i'll add archive.derive.la, and re-architect the whole thing. it's currently in a state of disarray.
